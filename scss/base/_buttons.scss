@@ -1,0 +1,40 @@
+//propiedades básicas de botón
+button, .at-btn{
+   border: none;
+   border-radius: 0.3rem;
+   cursor:pointer;
+   font-family: $font-primary;
+   font-size: $font-size;
+   margin: 0.5rem 0;
+   padding: 0.6rem 1.2rem;
+   text-align: center;
+   @include button( color(grayscale, gray-3), color(grayscale, black)  );
+   
+   // sombra
+   &.shadow {
+       box-shadow: 0 2px 2px 0 rgba(0,0,0,0.25);
+   }
+}
+
+// botón redondeado
+.at-btn-round {
+   border-radius: 5rem;
+}
+
+// botón con color solido
+.at-btn-primary-slider {
+    
+    @include button( color(primary, base) );
+
+    align-items: center;
+    color: color(primary, dark) !important;
+    display: flex;
+    font-size: map-get($sizes, "thumb");
+    font-weight: map-get($weights, "semi_bold");
+    height:6.4rem;
+    justify-content: center;
+    width: 25rem;
+}
+
+@include  mq-min(md){
+}

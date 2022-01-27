@@ -1,0 +1,434 @@
+
+.ritual_header {
+    margin: 5rem 0 0;
+    text-align: center;
+
+    p {
+        color: color(primary, dark);
+    }
+    p:nth-child(1){
+        font-size: map-get($sizes, "medium");
+        font-weight: map-get($weights, "semi_bold");
+        line-height: 36px;
+    }
+
+    p:nth-child(2){
+        font-family: $font-secondary;
+        font-size: map-get($sizes, "small");
+        line-height: 22px;
+        margin: 0 5rem;
+    }
+}
+.ritual_slider {
+    
+    .slide-card {
+        border-radius: 20px 20px 0px 0px;
+        box-shadow: (20px 20px 17px color(grayscale, gray-3));
+        display: flex;
+        flex-direction: column;
+        height: 912px;
+        width: 100%;
+    
+        &__image{
+            
+            img {
+                border-radius: 20px 20px 0px 0px;
+                object-fit: cover;
+                width: 100%;
+            }
+        }
+    
+        &__content {
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            margin-top: 3rem;
+
+            &-image {
+                max-height: 130px;
+
+                img {
+                    height: 135px;
+                    margin: 0 auto;
+                    width: auto;
+                }
+            }
+
+            span{
+                color: color(primary, base);
+                font-size: map-get($sizes, "xlarge");
+                font-weight: map-get($weights, "semi_bold");
+                margin-bottom: 10px;
+                margin-top: 20px;
+            }
+            p{
+                color: color(primary, dark);
+                font-size: map-get($sizes, "half");
+                font-weight: map-get($weights, "semi_bold");
+                line-height: 32px;
+                margin-bottom: 90px;
+                max-width: 20rem;
+                text-align: center;
+            }
+
+            
+        }
+
+        &__count {
+            color: color(primary, dark) !important;
+            font-size: map-get($sizes, "half") !important;
+            line-height: 30px;
+        }
+    }
+
+    .slick-track{
+        margin: 10rem 0;
+    }
+
+    .slider {
+        margin: 100px auto;
+    }
+
+    .slick-slide {
+      margin: 0px 17px;
+    }
+
+    .slick-slide {
+      transition: all ease-in-out .3s;
+      opacity: 0;
+    }
+
+    .slick-current {
+        transition: all ease-in-out .4s;
+        opacity: 1;
+    }
+
+    /* Arrows */
+    .slick-prev,
+    .slick-next
+    {
+        font-size: 0;
+        line-height: 0;
+
+        position: absolute;
+        top: 85%;
+
+        display: block;
+
+        width: 30px;
+        height: 30px;
+        padding: 0;
+        -webkit-transform: translate(0, -50%);
+        -ms-transform: translate(0, -50%);
+        transform: translate(0, -50%);
+
+        cursor: pointer;
+
+        color: transparent;
+        border: none;
+        outline: none;
+        background: transparent;
+    }
+    .slick-prev:hover,
+    .slick-prev:focus,
+    .slick-next:hover,
+    .slick-next:focus
+    {
+        color: transparent;
+        outline: none;
+        background: transparent;
+    }
+    .slick-prev:hover:before,
+    .slick-prev:focus:before,
+    .slick-next:hover:before,
+    .slick-next:focus:before
+    {
+        opacity: 1;
+    }
+    .slick-prev.slick-disabled:before,
+    .slick-next.slick-disabled:before
+    {
+        opacity: 0;
+    }
+
+    .slick-prev:before,
+    .slick-next:before
+    {
+        font-family: 'iconFont';
+        font-size: 40px;
+        line-height: 1;
+
+        color: color(primary, base);
+
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+
+    .slick-prev
+    {
+        left: calc(35vw);
+        z-index: 1;
+    }
+    [dir='rtl'] .slick-prev
+    {
+        right: -25px;
+        left: auto;
+    }
+    .slick-prev:before
+    {
+         content: "\e903";
+    }
+    [dir='rtl'] .slick-prev:before
+    {
+         content: "\e903";
+    }
+
+    .slick-next
+    {
+        right: calc(35vw);
+    }
+    [dir='rtl'] .slick-next
+    {
+        right: auto;
+        left: -25px;
+    }
+    .slick-next:before
+    {
+        content: "\e902";
+    }
+    [dir='rtl'] .slick-next:before
+    {
+        content: "\e902";
+    }
+
+    /* Dots */
+    .slick-dotted.slick-slider
+    {
+        margin-bottom: 30px;
+    }
+
+    .slick-dots
+    {
+        position: absolute;
+        bottom: 208px;
+
+        display: block;
+
+        width: 100%;
+        padding: 0;
+        margin: 0;
+
+        list-style: none;
+
+        text-align: center;
+    }
+    .slick-dots li
+    {
+        position: relative;
+
+        display: inline-block;
+
+        width: 25px;
+        height: 20px;
+        margin: 0 4px;
+        padding: 0;
+
+        cursor: pointer;
+    }
+    .slick-dots li button
+    {
+        font-size: 0;
+        line-height: 0;
+
+        display: block;
+
+        width: 20px;
+        height: 20px;
+        padding: 5px;
+
+        cursor: pointer;
+
+        color: color(primary, dark);
+        border: 0;
+        outline: none;
+        background: transparent;
+    }
+    .slick-dots li button:hover,
+    .slick-dots li button:focus
+    {
+        outline: none;
+    }
+    .slick-dots li button:hover:before,
+    .slick-dots li button:focus:before
+    {
+        opacity: 1;
+    }
+    .slick-dots li button:before
+    {
+        font-family: 'iconFont';
+        font-size: 1.3rem;
+        line-height: 20px;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        width: 30px;
+        height: 30px;
+
+        content: "\e900";
+        text-align: center;
+
+        // opacity: .25;
+        color: color(primary, dark);
+
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+    .slick-dots li.slick-active button:before
+    {
+        color: color(primary, base);
+    }
+}
+
+@include mq-min(lg) {
+
+    .ritual_header {
+    
+        p:nth-child(1){
+            font-size: map-get($sizes, "medium");
+            line-height: 40px;
+        }
+    
+        p:nth-child(2){
+            font-size: map-get($sizes, "base");
+            line-height: 24px;
+        }
+    }
+
+    .ritual_slider {
+
+        .slide-card {
+            border-radius: 20px 0px 0px 20px;
+            flex-direction: row !important;
+            height: 467px;
+            position: relative;
+            width: auto;
+
+            &__image{
+                width: 50%;
+
+                img {
+                    border-radius: 20px 0px 0px 20px;
+                    height: 467px;
+                }
+            }
+
+            &__content { 
+                margin: 3.6rem 3.8rem;
+                width: 50%;
+
+                p{
+                    font-size: map-get($sizes, "medium");
+                    font-weight: map-get($weights, "semi_bold");
+                    line-height: 40px;
+                    margin-bottom: 10px;
+                    max-width: 28rem;
+                }
+            }
+
+            &__count {
+                bottom: 4rem;
+                position: absolute;
+                right: 6%;
+            }
+        }
+
+        .slick-slide {
+            margin: 0px 40px;
+        }
+
+        .slick-dots {
+            bottom: 380px;
+            transform: rotate(90deg);
+            right: 1rem;
+            width: inherit;
+        }
+
+        .slick-prev {
+            left: calc(84vw);
+            top: 74%;
+        }
+
+        .slick-next {
+            right: calc(6vw);
+            top: 74%;
+        }
+    }
+}
+
+@include mq-min(xl) {
+
+    .ritual_slider {
+
+        .slide-card {
+
+            &__count {
+                right: 7%;
+            }
+        }
+    }
+}
+
+@include mq-min(xxl) {
+
+    .ritual_slider {
+
+        .slide-card {
+            
+            &__image{
+            
+                img {
+                    width: 717px;
+                }
+            }
+
+            &__content { 
+                
+                width: 100%;
+
+                &-image {
+                    max-height: 154px;
+    
+                    img {
+                        height: 100%;
+                        margin-top: 2rem;
+                    }
+                }
+
+                span{
+                    font-size: map-get($sizes, "xlarge");
+                    margin-bottom: 5px;
+                    margin-top: 25px;
+                }
+            }
+
+            &__count {
+                bottom: 5rem;
+                right: 6%;
+            }
+        }
+
+        .slick-slide {
+            margin: 0px 70px;
+        }
+
+        .slick-dots {
+            right: 5rem;
+        }
+
+        .slick-next {
+            right: calc(7vw);
+        }
+    }
+}

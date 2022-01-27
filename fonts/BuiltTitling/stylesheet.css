@@ -1,0 +1,90 @@
+@font-face {
+    font-family: 'Built Titling El';
+    src: url('BuiltTitlingEl-Italic.woff2') format('woff2'),
+        url('BuiltTitlingEl-Italic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Built Titling Rg';
+    src: url('BuiltTitlingRg-BoldItalic.woff2') format('woff2'),
+        url('BuiltTitlingRg-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Built Titling El';
+    src: url('BuiltTitlingEl-Regular.woff2') format('woff2'),
+        url('BuiltTitlingEl-Regular.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Built Titling Lt';
+    src: url('BuiltTitlingLt-Regular.woff2') format('woff2'),
+        url('BuiltTitlingLt-Regular.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Built Titling Lt';
+    src: url('BuiltTitlingLt-Italic.woff2') format('woff2'),
+        url('BuiltTitlingLt-Italic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Built Titling Rg';
+    src: url('BuiltTitlingRg-Bold.woff2') format('woff2'),
+        url('BuiltTitlingRg-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Built Titling Sb';
+    src: url('BuiltTitlingSb-Regular.woff2') format('woff2'),
+        url('BuiltTitlingSb-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Built Titling Rg';
+    src: url('BuiltTitlingRg-Italic.woff2') format('woff2'),
+        url('BuiltTitlingRg-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Built Titling Sb';
+    src: url('BuiltTitlingSb-Italic.woff2') format('woff2'),
+        url('BuiltTitlingSb-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Built Titling Rg';
+    src: url('BuiltTitlingRg-Regular.woff2') format('woff2'),
+        url('BuiltTitlingRg-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

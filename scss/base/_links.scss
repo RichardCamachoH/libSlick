@@ -1,0 +1,19 @@
+a{
+   color: color(grayscale, gray-5);
+   display: inline-block;
+   outline: 0;
+   text-decoration: none;
+   transition: color .1s ease-out;
+   vertical-align: middle;
+
+   // Link subrayado
+   &.underline-link{
+       font-weight: map-get($weights, "semi_bold");
+       text-decoration: underline;
+
+       &:hover {
+           text-decoration: none;
+       }
+   }
+   
+}
